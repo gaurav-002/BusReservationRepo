@@ -1,0 +1,37 @@
+//package com.lti.dao;
+//
+//import javax.persistence.EntityManager;
+//import javax.persistence.PersistenceContext;
+//import javax.persistence.TypedQuery;
+//import javax.transaction.Transactional;
+//import com.lti.model.BookingDetails;
+//
+//public class BusBookingDaoImpl implements BusBookingDao {
+//	
+//	@PersistenceContext
+//	private EntityManager entityManager;
+//
+//	@Transactional
+//	@Override
+//	public BookingDetails bookBus(BookingDetails details) {
+//		String sql1 = "Insert into Booking_Details(booking_id,passenger_id,passenger_age,passenger_name,passenger_gender,bus_id,bus_fare,bus_name,bus_source,bus_destination,bus_departure_time,bus_departure_date,booking_date)values(booking_detail_booking_id.nextval,:pId,:pAge,:pName,:pGender,:bId,:bFare,:bName,:bSource,:bDestination)";
+//		
+//		TypedQuery<BookingDetails> query = entityManager.createQuery(arg0, arg1)
+//		
+//		return null;
+//	}
+//
+//}
+////booking_id number(5) primary key,
+////passenger_id number(5),	 
+////passenger_age number(3),
+////passenger_name varchar(20),
+////passenger_gender varchar(10),
+////bus_id number(5),	 
+////bus_fare number(5),	 
+////bus_name varchar(15),
+////bus_source varchar(15),
+////bus_destination varchar(15),
+////bus_departure_time varchar(8) not null,
+////bus_departure_date varchar(15),
+////booking_date date

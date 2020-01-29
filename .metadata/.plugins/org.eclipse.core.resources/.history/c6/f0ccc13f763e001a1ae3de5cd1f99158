@@ -1,0 +1,60 @@
+package com.lti.model;
+
+import java.util.Date;
+
+public class SeatID {
+
+	private String seatId;
+	private int busId;
+	private String status;
+	private Date busDepartureDate;
+	
+	public SeatID(String seatId, int busId, String status, Date busDepartureDate) {
+		super();
+		this.seatId = seatId;
+		this.busId = busId;
+		this.status = status;
+		this.busDepartureDate = busDepartureDate;
+	}
+
+	public String getSeatId() {
+		return seatId;
+	}
+
+	public void setSeatId(String seatId) {
+		this.seatId = seatId;
+	}
+
+	public int getBusId() {
+		return busId;
+	}
+
+	public void setBusId(int busId) {
+		this.busId = busId;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public Date getBusDepartureDate() {
+		return busDepartureDate;
+	}
+
+	public void setBusDepartureDate(Date busDepartureDate) {
+		this.busDepartureDate = busDepartureDate;
+	}
+
+	@Override
+	public String toString() {
+		return "SeatID [seatId=" + seatId + ", busId=" + busId + ", status=" + status + ", busDepartureDate="
+				+ busDepartureDate + "]";
+	}
+	
+	
+	
+}

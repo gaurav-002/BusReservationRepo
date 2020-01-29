@@ -1,0 +1,8 @@
+package com.lti.dao;
+
+import com.lti.model.BusDetails;
+import com.lti.model.BusSearch;
+
+public interface BusSearchDao {
+	public List<BusSearch> busSearch(BusSearch busSearch);
+} 

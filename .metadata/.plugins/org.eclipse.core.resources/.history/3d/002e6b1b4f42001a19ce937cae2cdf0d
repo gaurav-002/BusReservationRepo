@@ -1,0 +1,13 @@
+package com.lti.service;
+
+import com.lti.model.BookingCancellation;
+
+public class BookingCancellationServiceImpl implements BookingCancellationService {
+
+	@Override
+	public boolean bookingCancellation(BookingCancellation bookingCancellation) {
+		
+		return false;
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.lti.dao;
+
+import javax.transaction.Transactional;
+
+import com.lti.model.BookingDetails;
+
+public class BusBookingDaoImpl implements BusBookingDao {
+
+	@Transactional
+	@Override
+	public BookingDetails bookBus(BookingDetails details) {
+		
+		return null;
+	}
+
+}

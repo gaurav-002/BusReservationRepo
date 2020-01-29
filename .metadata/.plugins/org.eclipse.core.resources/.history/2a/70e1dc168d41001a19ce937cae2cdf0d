@@ -1,0 +1,23 @@
+package com.lti.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lti.dao.BusBookingDao;
+import com.lti.dao.BusBookingDaoImpl;
+import com.lti.model.BookingDetails;
+@Service
+public class BusBookingServiceImpl implements BusBookingService {
+	@Autowired
+	private BusBookingDao dao;
+	
+//	public BusBookingServiceImpl() {
+//		dao = new BusBookingDaoImpl();
+	}
+	@Override
+	public BookingDetails bookBus(BookingDetails details) {
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.lti.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+import com.lti.model.BookingDetails;
+
+public class BusBookingDaoImpl implements BusBookingDao {
+	
+	@PersistenceContext
+	private EntityManager entityManager;
+
+	@Transactional
+	@Override
+	public BookingDetails bookBus(BookingDetails details) {
+		
+		return null;
+	}
+
+}

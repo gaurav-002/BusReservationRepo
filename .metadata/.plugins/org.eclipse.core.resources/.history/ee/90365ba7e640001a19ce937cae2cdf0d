@@ -1,0 +1,28 @@
+package com.lti.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
+
+import org.springframework.stereotype.Repository;
+
+import com.lti.model.BusDetails;
+import com.lti.model.BusSearch;
+import com.lti.model.Credentials;
+
+@Repository("busSearchDao")
+public class BusSearchDaoImpl implements BusSearchDao {
+	
+	@PersistenceContext
+	private EntityManager entityManager;
+	
+	@Transactional
+	@Override
+	public BusDetails busSearch(BusSearch busSearch) {
+		TypedQuery<Credentials> query=entityManager.createQuery("select b From Bus_details b where b.bus_source=:source, b.bus_destination=:destination, b.bus_date=:date, b.seats_available > :travellers", BusDetails.class);
+		 query.setParameter("username", username);
+		return null;
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.lti.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.lti.dao.BookingCancellationDao;
+import com.lti.dao.BookingCancellationDaoImpl;
+import com.lti.model.BookingCancellation;
+
+public class BookingCancellationServiceImpl implements BookingCancellationService {
+
+	@Autowired
+	private BookingCancellationDao dao;
+	
+	public BookingCancellationServiceImpl() {
+		dao = new BookingCancellationDaoImpl(); 
+	}
+	
+	@Override
+	public boolean bookingCancellation(BookingCancellation bookingCancellation) {
+		int candetails=dao.bookingCancellation(bookingCancellation);
+		if(candetails==1){
+			return true;
+		}
+		else{
+			return false;
+		}
+		
+	}
+
+}

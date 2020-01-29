@@ -1,0 +1,10 @@
+package com.lti.service;
+
+import org.springframework.stereotype.Service;
+
+import com.lti.model.BookingCancellation;
+
+@Service
+public interface BookingCancellationService {
+	public boolean bookingCancellation(BookingCancellation bookingCancellation);
+}

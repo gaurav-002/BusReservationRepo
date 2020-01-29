@@ -1,0 +1,9 @@
+package com.lti.service;
+
+import com.lti.model.BusDetails;
+import com.lti.model.BusSearch;
+
+public class BusSearchServiceImpl implements BusSearchService {
+
+	
+}

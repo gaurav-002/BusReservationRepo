@@ -1,0 +1,17 @@
+package com.lti.service;
+
+import java.util.List;
+
+import com.lti.model.BusDetails;
+import com.lti.model.BusSearch;
+
+public class BusSearchServiceImpl implements BusSearchService {
+
+	@Override
+	public List<BusDetails> busSearch(BusSearch busSearch) {
+		
+		return null;
+	}
+
+	
+}

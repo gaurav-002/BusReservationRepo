@@ -1,0 +1,203 @@
+package com.lti.model;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="booking_details")
+public class BookingDetails {
+	@Id
+	@Column(name="booking_id")
+	private int bookingId;
+	@Column(name="passenger_id")
+	private int passengerId;
+	@Column(name="passenger_name")
+	private String passengerName;
+	@Column(name="passenge_age")
+	private int passengerAge;
+	@Column(name="passenge_gender")
+	private String passengerGender;
+	@Column(name="bus_id")
+	private int busId;
+	@Column(name="bus_name")
+	private String busName;
+	@Column(name="bus_fare")
+	private int busFare;
+	@Column(name="bus_source")
+	private String busSource;
+	@Column(name="bus_destination")
+	private String busDestination;
+	@Column(name="bus_departure_time")
+	private String busDepartureTime;
+	@Column(name="bus_departure_date")
+	private String busDepartureDate;
+	@Column(name="booking_date")
+	private String bookingDate;
+	@Column(name="no_of_seats")
+	private int noOfSeats;
+		
+	public BookingDetails() {
+		super();
+	}
+
+	public BookingDetails(int bookingId, int passengerId, String passengerName, int passengerAge,
+			String passengerGender, int busId, String busName, int busFare, String busSource, String busDestination,
+			String busDepartureTime, String busDepartureDate, String bookingDate, int noOfSeats) {
+		super();
+		this.bookingId = bookingId;
+		this.passengerId = passengerId;
+		this.passengerName = passengerName;
+		this.passengerAge = passengerAge;
+		this.passengerGender = passengerGender;
+		this.busId = busId;
+		this.busName = busName;
+		this.busFare = busFare;
+		this.busSource = busSource;
+		this.busDestination = busDestination;
+		this.busDepartureTime = busDepartureTime;
+		this.busDepartureDate = busDepartureDate;
+		this.bookingDate = bookingDate;
+		this.noOfSeats = noOfSeats;
+	}
+
+	public int getBookingId() {
+		return bookingId;
+	}
+
+	public void setBookingId(int bookingId) {
+		this.bookingId = bookingId;
+	}
+
+	public int getPassengerId() {
+		return passengerId;
+	}
+
+	public void setPassengerId(int passengerId) {
+		this.passengerId = passengerId;
+	}
+
+	public String getPassengerName() {
+		return passengerName;
+	}
+
+	public void setPassengerName(String passengerName) {
+		this.passengerName = passengerName;
+	}
+
+	public int getPassengerAge() {
+		return passengerAge;
+	}
+
+	public void setPassengerAge(int passengerAge) {
+		this.passengerAge = passengerAge;
+	}
+
+	public String getPassengerGender() {
+		return passengerGender;
+	}
+
+	public void setPassengerGender(String passengerGender) {
+		this.passengerGender = passengerGender;
+	}
+
+	public int getBusId() {
+		return busId;
+	}
+
+	public void setBusId(int busId) {
+		this.busId = busId;
+	}
+
+	public String getBusName() {
+		return busName;
+	}
+
+	public void setBusName(String busName) {
+		this.busName = busName;
+	}
+
+	public int getBusFare() {
+		return busFare;
+	}
+
+	public void setBusFare(int busFare) {
+		this.busFare = busFare;
+	}
+
+	public String getBusSource() {
+		return busSource;
+	}
+
+	public void setBusSource(String busSource) {
+		this.busSource = busSource;
+	}
+
+	public String getBusDestination() {
+		return busDestination;
+	}
+
+	public void setBusDestination(String busDestination) {
+		this.busDestination = busDestination;
+	}
+
+	public String getBusDepartureTime() {
+		return busDepartureTime;
+	}
+
+	public void setBusDepartureTime(String busDepartureTime) {
+		this.busDepartureTime = busDepartureTime;
+	}
+
+	public String getBusDepartureDate() {
+		return busDepartureDate;
+	}
+
+	public void setBusDepartureDate(String busDepartureDate) {
+		this.busDepartureDate = busDepartureDate;
+	}
+
+	public String getBookingDate() {
+		return bookingDate;
+	}
+
+	public void setBookingDate(String bookingDate) {
+		this.bookingDate = bookingDate;
+	}
+
+	public int getNoOfSeats() {
+		return noOfSeats;
+	}
+
+	public void setNoOfSeats(int noOfSeats) {
+		this.noOfSeats = noOfSeats;
+	}
+
+	@Override
+	public String toString() {
+		return "BookingDetails [bookingId=" + bookingId + ", passengerId=" + passengerId + ", passengerName="
+				+ passengerName + ", passengerAge=" + passengerAge + ", passengerGender=" + passengerGender + ", busId="
+				+ busId + ", busName=" + busName + ", busFare=" + busFare + ", busSource=" + busSource
+				+ ", busDestination=" + busDestination + ", busDepartureTime=" + busDepartureTime
+				+ ", busDepartureDate=" + busDepartureDate + ", bookingDate=" + bookingDate + ", noOfSeats=" + noOfSeats
+				+ "]";
+	}
+
+
+		
+}
+//create table booking_details
+//(booking_id number(5) primary key,
+// passenger_id number(5),	 
+// passenger_age number(3),
+// passenger_name varchar(20),
+// passenger_gender varchar(10),
+// bus_id number(5),	 
+// bus_fare number(5),	 
+// bus_name varchar(15),
+// bus_source varchar(15),
+// bus_destination varchar(15),
+// bus_departure_time varchar(8) not null,
+// bus_departure_date varchar(15),
+// booking_date date);

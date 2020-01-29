@@ -1,0 +1,52 @@
+package com.lti.model;
+
+public class BookingDetails {
+
+	private int bookingId;
+	private int passengerId;
+	private String passengerName;
+	private int passengerAge;
+	private String passengerGender;
+	private int busId;
+	private String busName;
+	private int busFare;
+	private String busSource;
+	private String busDestination;
+	private String busDepartureTime;
+	private String busDepartureDate;
+	private String bookingDate;
+	public BookingDetails(int bookingId, int passengerId, String passengerName, int passengerAge,
+			String passengerGender, int busId, String busName, int busFare, String busSource, String busDestination,
+			String busDepartureTime, String busDepartureDate, String bookingDate) {
+		super();
+		this.bookingId = bookingId;
+		this.passengerId = passengerId;
+		this.passengerName = passengerName;
+		this.passengerAge = passengerAge;
+		this.passengerGender = passengerGender;
+		this.busId = busId;
+		this.busName = busName;
+		this.busFare = busFare;
+		this.busSource = busSource;
+		this.busDestination = busDestination;
+		this.busDepartureTime = busDepartureTime;
+		this.busDepartureDate = busDepartureDate;
+		this.bookingDate = bookingDate;
+	}
+	
+	
+}
+//create table booking_details
+//(booking_id number(5) primary key,
+// passenger_id number(5),	 
+// passenger_age number(3),
+// passenger_name varchar(20),
+// passenger_gender varchar(10),
+// bus_id number(5),	 
+// bus_fare number(5),	 
+// bus_name varchar(15),
+// bus_source varchar(15),
+// bus_destination varchar(15),
+// bus_departure_time varchar(8) not null,
+// bus_departure_date varchar(15),
+// booking_date date);

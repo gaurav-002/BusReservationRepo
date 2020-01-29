@@ -1,0 +1,7 @@
+package com.lti.dao;
+
+import com.lti.model.BookingDetails;
+
+public interface BusBookingDao {
+	public BookingDetails bookBus(BookingDetails details);
+}

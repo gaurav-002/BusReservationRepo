@@ -1,0 +1,16 @@
+package com.lti.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.lti.model.BookingCancellation;
+
+@Repository("bookingCanellationDao")
+public class BookingCancellationDaoImpl implements BookingCancellationDao {
+
+	@Override
+	public int bookingCancellation(BookingCancellation bookingCancellation) {
+		
+		return 0;
+	}
+
+}

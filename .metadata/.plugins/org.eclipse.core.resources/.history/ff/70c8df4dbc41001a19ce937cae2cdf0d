@@ -1,0 +1,7 @@
+package com.lti.service;
+
+import com.lti.model.BookingDetails;
+
+public interface BookingDetailsService {
+	public BookingDetails bookBus(BookingDetails bookBus);
+}

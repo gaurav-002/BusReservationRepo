@@ -1,0 +1,7 @@
+package com.lti.service;
+
+import com.lti.model.Credentials;
+
+public interface CredentialsService {
+	public Passenger readPassenger(String username, String password);
+}

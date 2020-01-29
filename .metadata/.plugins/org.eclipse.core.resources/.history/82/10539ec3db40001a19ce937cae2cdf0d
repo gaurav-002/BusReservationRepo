@@ -1,0 +1,15 @@
+package com.lti.model;
+
+public class BusDetails {
+
+}
+//create table bus_details
+//(bus_id number(5) primary key,
+// bus_name varchar(15),
+// bus_source varchar(15),
+// bus_destination varchar(15),
+// bus_departure_time varchar(8) not null,
+// bus_arrival_time varchar(8) not null,
+// bus_fare varchar(4) not null,
+//	 seats_available number(3),
+// bus_date varchar(15));

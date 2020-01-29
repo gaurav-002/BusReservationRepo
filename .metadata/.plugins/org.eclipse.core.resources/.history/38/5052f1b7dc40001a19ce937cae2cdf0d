@@ -1,0 +1,14 @@
+package com.lti.service;
+
+import com.lti.model.BusDetails;
+import com.lti.model.BusSearch;
+
+public class BusSearchServiceImpl implements BusSearchService {
+
+	public BusDetails busSearch(BusSearch busSearch) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

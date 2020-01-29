@@ -1,0 +1,14 @@
+package com.lti.dao;
+
+import com.lti.model.BookingDetails;
+
+public class BusBookingDaoImpl implements BusBookingDao {
+
+
+	@Override
+	public BookingDetails bookBus(BookingDetails details) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
